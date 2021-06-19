@@ -61,8 +61,8 @@ const Navigator = (props: Props) => {
         <div className="flex flex-col content-center h-1/3 pt-10">
           {
             _.map(menuItem, (data ,index) => (
-              <div className={`text-center my-2 mx-16 rounded-5 ${currentPage === data.word ? classNameCurrentPage : ''}`} key={index}>
-                <Link href={data.path}><a><RegularText>{data.word}</RegularText></a></Link>
+              <div className={`text-center my-2 mx-16 rounded-5 cursor-pointer ${currentPage === data.word ? classNameCurrentPage : ''}`}>
+                <Link href={data.path}><RegularText>{data.word}</RegularText></Link>
               </div>
             ))
           }
