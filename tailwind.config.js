@@ -19,6 +19,7 @@ module.exports = {
       'cusLightYellow': '#FFF0A4',
       'cusRegularYellow': '#FFCA62',
       'cusYellow': '#FFD700',
+      'cusYellow-500': '#FFDD1A',
       'cusDarkYellow': '#F4B740',
       'cusPastelOrange': '##FFDC97',
       'cusLightOrange': '#FFA753',
@@ -42,7 +43,7 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    borderRadius: ['responsive', 'hover', 'focus'],
   },
   plugins: [],
 }
