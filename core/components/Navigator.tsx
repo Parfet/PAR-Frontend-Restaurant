@@ -60,8 +60,8 @@ const Navigator = (props: Props) => {
         </div>
         <div className="flex flex-col content-center h-1/3 pt-10">
           {
-            _.map(menuItem, (data) => (
-              <div className={`text-center my-2 mx-16 rounded-5 ${currentPage === data.word ? classNameCurrentPage : ''}`}>
+            _.map(menuItem, (data ,index) => (
+              <div className={`text-center my-2 mx-16 rounded-5 ${currentPage === data.word ? classNameCurrentPage : ''}`} key={index}>
                 <Link href={data.path}><a><RegularText>{data.word}</RegularText></a></Link>
               </div>
             ))
