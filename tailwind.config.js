@@ -18,7 +18,7 @@ module.exports = {
       'cusPink': '#F9BEBA',
       'cusLightYellow': '#FFF0A4',
       'cusRegularYellow': '#FFCA62',
-      'cusYellow': '#FFD700',
+      'cusYellow': '#F8CE28',
       'cusYellow-500': '#FFDD1A',
       'cusDarkYellow': '#F4B740',
       'cusPastelOrange': '##FFDC97',
