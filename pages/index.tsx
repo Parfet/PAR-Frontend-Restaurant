@@ -1,18 +1,15 @@
 import React from 'react'
-// import { useRouter } from 'next/router'
 
 import Navigator from '../core/components/Navigator'
 import { MENU } from '../core/constant/constant'
+import DashBoard from '../features/Home/pages/index'
 
 const Home = () => {
-  // const router = useRouter()
 
   return (
     <div className="">
       <Navigator currentPage={MENU.MENU_HOME}>
-        <>
-          Hello
-        </>
+        <DashBoard />
       </Navigator>
     </div>
   )
