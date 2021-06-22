@@ -7,11 +7,9 @@ import DashBoard from '../features/Home/pages/index'
 const Home = () => {
 
   return (
-    <div className="">
-      <Navigator currentPage={MENU.MENU_HOME}>
-        <DashBoard />
-      </Navigator>
-    </div>
+    <Navigator currentPage={MENU.MENU_HOME}>
+      <DashBoard />
+    </Navigator>
   )
 }
 

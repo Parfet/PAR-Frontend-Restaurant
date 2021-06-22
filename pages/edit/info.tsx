@@ -6,13 +6,11 @@ import { MENU } from '../../core/constant/constant'
 const EditInfo = () => {
 
   return (
-    <div className="">
-      <Navigator isYellow currentPage={MENU.MENU_EDIT_INFO}>
-        <>
-          EditInfo
-        </>
-      </Navigator>
-    </div>
+    <Navigator isYellow currentPage={MENU.MENU_EDIT_INFO}>
+      <>
+        EditInfo
+      </>
+    </Navigator>
   )
 }
 
