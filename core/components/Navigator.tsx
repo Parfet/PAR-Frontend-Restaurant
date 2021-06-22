@@ -42,10 +42,10 @@ const BgNavigator = styled.div`
 const Logo = styled.div`
   background-image: URL('/images/logo_parfet_192_no_bg.png');
   background-position: center;
-  background-size: 128px;
+  background-size: 192px;
   background-repeat: no-repeat;
-  width: 168px;
-  height: 168px;
+  width: 256px;
+  height: 256px;
 `
 
 const Navigator = (props: Props) => {
@@ -55,17 +55,19 @@ const Navigator = (props: Props) => {
   return (
     <div className="flex w-screen h-screen">
       <BgNavigator isYellow={isYellow} className="flex flex-col justify-between w-1/4 py-10">
-        <div className="flex justify-center h-1/3">
+        <div className="flex justify-center flex-wrap content-center h-1/3">
           <Logo className="bg-white rounded-50 p-12" />
         </div>
-        <div className="flex flex-col content-center h-1/3 pt-10">
-          {
-            _.map(menuItem, (data ,index) => (
-              <div className={`text-center my-2 mx-16 rounded-5 cursor-pointer ${currentPage === data.word ? classNameCurrentPage : ''}`}>
-                <Link href={data.path}><RegularText>{data.word}</RegularText></Link>
-              </div>
-            ))
-          }
+        <div className="flex justify-center flex-wrap content-center h-1/3 pt-10">
+          <div className="flex flex-col content-center">
+            {
+              _.map(menuItem, (data ,index) => (
+                <div className={`text-center my-3 py-2 px-20 rounded-5 cursor-pointer ${currentPage === data.word ? classNameCurrentPage : ''}`}>
+                  <Link href={data.path}><RegularText>{data.word}</RegularText></Link>
+                </div>
+              ))
+            }
+          </div>
         </div>
         <div className="h-1/3"></div>
       </BgNavigator>
