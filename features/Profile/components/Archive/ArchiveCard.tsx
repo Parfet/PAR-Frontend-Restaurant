@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { RegularText } from '../../../../core/config/textStyle'
+import { RegularText } from '../../../../core/config/TextStyle'
 import CardElement from '../../../../core/components/CardElement'
 import ArchiveModal from './ArchiveModal'
 

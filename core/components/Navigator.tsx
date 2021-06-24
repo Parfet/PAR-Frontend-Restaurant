@@ -3,7 +3,7 @@ import Link  from 'next/link'
 import styled from 'styled-components'
 import _ from "lodash"
 
-import { RegularText } from '../config/textStyle'
+import { SubHeader } from '../config/TextStyle'
 import { MENU } from '../constant/constant'
 
 interface Props {
@@ -63,7 +63,7 @@ const Navigator = (props: Props) => {
             {
               _.map(menuItem, (data ,index) => (
                 <div className={`text-center my-3 py-2 px-20 rounded-5 cursor-pointer ${currentPage === data.word ? classNameCurrentPage : ''}`}>
-                  <Link href={data.path}><RegularText>{data.word}</RegularText></Link>
+                  <Link href={data.path}><SubHeader>{data.word}</SubHeader></Link>
                 </div>
               ))
             }

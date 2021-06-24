@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import CardElement from '../../../../core/components/CardElement'
-import { NormalText, SubHeader, SmallText } from '../../../../core/config/textStyle'
+import { NormalText, SubHeader, SmallText } from '../../../../core/config/TextStyle'
 
 interface Props {
   showModal: boolean

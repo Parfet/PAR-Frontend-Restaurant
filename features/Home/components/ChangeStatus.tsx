@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import _ from 'lodash'
 
 import { RestaurantStatus } from '../../../core/constant/enum'
-import { RegularText } from '../../../core/config/textStyle'
+import { RegularText } from '../../../core/config/TextStyle'
 import CardElement from '../../../core/components/CardElement'
 
 const optionItem = [
