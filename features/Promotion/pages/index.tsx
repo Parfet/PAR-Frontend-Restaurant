@@ -2,6 +2,7 @@ import React from 'react'
 
 import CardElement from '../../../core/components/CardElement'
 import PromotionList from '../components/PromotionList'
+import PromotionForm from '../components/PromotionForm'
 
 const ProfileManagement = () => {
 
@@ -11,7 +12,7 @@ const ProfileManagement = () => {
         <PromotionList />
       </CardElement>
       <CardElement classNameFromParent="w-1/2 mr-16">
-        <></>
+        <PromotionForm />
       </CardElement>
     </div>
   )
