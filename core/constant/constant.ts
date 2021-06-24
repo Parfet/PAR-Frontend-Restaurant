@@ -4,3 +4,8 @@ export const MENU = {
   MENU_PROMOTION: "จัดการโปรโมชั่น", 
   MENU_PROFILE: "จัดการบัญชีร้านบุฟเฟต์"
 }
+
+export const PromotionStatusThai = {
+  PROMOTION_ACTIVE: "เปิดใช้งาน",
+  PROMOTION_INACTIVE: "ปิดใช้งาน"
+}
