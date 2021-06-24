@@ -15,6 +15,7 @@ module.exports = {
     backgroundColor: theme => ({
       ...theme('colors'),
       'cusGreen': '#62DE81',
+      'cusPastelGreen': '#b4ecb4',
       'cusPink': '#F9BEBA',
       'cusLightYellow': '#FFF0A4',
       'cusRegularYellow': '#FFCA62',
@@ -25,6 +26,8 @@ module.exports = {
       'cusLightOrange': '#FFA753',
       'cusDarkRed': '#9C4A55',
       'cusRed': '#AC3B31',
+      'cusPastelRed': '#FF6961',
+      'cusPastelPink': '#FFD1DC',
       'cusPurple': '#B82AFF',
       'cusBrown': '#AC5B31',
     }),
